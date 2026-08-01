@@ -100,7 +100,7 @@ The custom container helps:
 
 ### Custom Keyboard
 
-<img width="597" height="337" alt="image" src="https://github.com/user-attachments/assets/b0ca36a8-5900-49b4-9342-119c322caf89" />
+<img width="557" height="227" alt="image" src="https://github.com/user-attachments/assets/fccec7db-43c2-4a4b-aeeb-6bcd6723725d" />
 
 
 ---
