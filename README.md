@@ -103,9 +103,12 @@ The custom container helps:
 <img width="597" height="337" alt="image" src="https://github.com/user-attachments/assets/b0ca36a8-5900-49b4-9342-119c322caf89" />
 
 
+---
+
 ### Password Setup
 
-![Password Setup](Assets/password_setup.png)
+<img width="621" height="397" alt="image" src="https://github.com/user-attachments/assets/9facf6c3-f1a5-4806-ab0d-09f1da02440a" />
+
 
 ---
 
