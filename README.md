@@ -105,13 +105,6 @@ The custom container helps:
 
 ---
 
-### Password Setup
-
-<img width="621" height="397" alt="image" src="https://github.com/user-attachments/assets/9facf6c3-f1a5-4806-ab0d-09f1da02440a" />
-
-
----
-
 ### Password Visibility
 
 <img width="607" height="372" alt="image" src="https://github.com/user-attachments/assets/57a3c013-e182-4367-8559-532b406ff4a4" /> 
