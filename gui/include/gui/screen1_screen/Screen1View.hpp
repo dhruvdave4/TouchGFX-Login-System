@@ -27,7 +27,7 @@ protected:
     };
  
       touchgfx::Callback<Screen1View, const char*> keyCallback;
-    Field currentField;   // ✅ track active input
+    Field currentField;   //  track active input
 
   
 static const int BUFFER_SIZE = 20;
@@ -35,7 +35,8 @@ static const int BUFFER_SIZE = 20;
 char buffer[BUFFER_SIZE]; 
 
     a_z_Custom_Container a_z_Custom_Container1;
-    touchgfx::Container a_z_container; 
+    touchgfx::Container a_z_container;  
+    int len = Unicode::strlen(buffer);
 
 };
 

@@ -100,9 +100,9 @@
             "Type": "TextArea",
             "Name": "user_id_input",
             "X": 121,
-            "Y": 19,
+            "Y": 17,
             "Width": 342,
-            "Height": 21,
+            "Height": 23,
             "TextId": "__SingleUse_B4GY",
             "TextRotation": "0",
             "Wildcard1": {
@@ -151,6 +151,20 @@
               "Blue": 255
             },
             "AutoSize": true
+          },
+          {
+            "Type": "TextArea",
+            "Name": "textArea1",
+            "X": 121,
+            "Y": 59,
+            "Width": 311,
+            "Height": 25,
+            "TextId": "__SingleUse_FBPL",
+            "TextRotation": "0",
+            "Wildcard1": {
+              "UseBuffer": true,
+              "BufferSize": 20
+            }
           },
           {
             "Type": "TextArea",
@@ -1823,6 +1837,7 @@
                 "Y": -1,
                 "Width": 36,
                 "Height": 36,
+                "Visible": false,
                 "Pressed": "__generated\\light_theme_images_widgets_button_icon_rounded_micro_outline_disabled.png",
                 "Released": "__generated\\light_theme_images_widgets_button_icon_rounded_micro_fill_disabled.png",
                 "IconPressed": "__generated\\icon_theme_images_file_upload_30_30_E8F6FB.svg.png",

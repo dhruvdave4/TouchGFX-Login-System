@@ -57,6 +57,7 @@ protected:
     a_z_Custom_Container a_z_Custom_Container1;
     touchgfx::TextArea user_id_text;
     touchgfx::TextArea password_text;
+    touchgfx::TextAreaWithOneWildcard textArea1;
     touchgfx::TextAreaWithOneWildcard pass_input;
     touchgfx::ButtonWithIcon visible_button;
     touchgfx::ButtonWithIcon non_visible_buttom;
@@ -66,6 +67,8 @@ protected:
      */
     static const uint16_t USER_ID_INPUT_SIZE = 30;
     touchgfx::Unicode::UnicodeChar user_id_inputBuffer[USER_ID_INPUT_SIZE];
+    static const uint16_t TEXTAREA1_SIZE = 20;
+    touchgfx::Unicode::UnicodeChar textArea1Buffer[TEXTAREA1_SIZE];
     static const uint16_t PASS_INPUT_SIZE = 20;
     touchgfx::Unicode::UnicodeChar pass_inputBuffer[PASS_INPUT_SIZE];
 

@@ -697,6 +697,7 @@ a_z_Custom_ContainerBase::a_z_Custom_ContainerBase() :
     upper_case_button_2.setXY(0, -1);
     upper_case_button_2.setBitmaps(touchgfx::Bitmap(BITMAP_LIGHT_THEME_IMAGES_WIDGETS_BUTTON_ICON_ROUNDED_MICRO_FILL_DISABLED_ID), touchgfx::Bitmap(BITMAP_LIGHT_THEME_IMAGES_WIDGETS_BUTTON_ICON_ROUNDED_MICRO_OUTLINE_DISABLED_ID), touchgfx::Bitmap(BITMAP_ICON_THEME_IMAGES_FILE_FILE_UPLOAD_30_30_000000_SVG_ID), touchgfx::Bitmap(BITMAP_ICON_THEME_IMAGES_FILE_UPLOAD_30_30_E8F6FB_SVG_ID));
     upper_case_button_2.setIconXY(4, 5);
+    upper_case_button_2.setVisible(false);
     upper_case_button_2.setAction(buttonCallback);
     up_button_container.add(upper_case_button_2);
 

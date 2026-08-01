@@ -32,7 +32,7 @@ Screen1ViewBase::Screen1ViewBase() :
     pass_button.setPosition(120, 59, 343, 25);
     add(pass_button);
 
-    user_id_input.setPosition(121, 19, 342, 21);
+    user_id_input.setPosition(121, 17, 342, 23);
     user_id_input.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
     user_id_input.setLinespacing(0);
     user_id_inputBuffer[0] = 0;
@@ -55,6 +55,14 @@ Screen1ViewBase::Screen1ViewBase() :
     password_text.setLinespacing(0);
     password_text.setTypedText(touchgfx::TypedText(T___SINGLEUSE_SSGT));
     add(password_text);
+
+    textArea1.setPosition(121, 59, 311, 25);
+    textArea1.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
+    textArea1.setLinespacing(0);
+    textArea1Buffer[0] = 0;
+    textArea1.setWildcard(textArea1Buffer);
+    textArea1.setTypedText(touchgfx::TypedText(T___SINGLEUSE_FBPL));
+    add(textArea1);
 
     pass_input.setPosition(121, 59, 311, 25);
     pass_input.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
