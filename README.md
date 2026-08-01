@@ -107,14 +107,13 @@ The custom container helps:
 
 ### Password Visibility
 
-<img width="607" height="372" alt="image" src="https://github.com/user-attachments/assets/57a3c013-e182-4367-8559-532b406ff4a4" /> 
+<img width="607" height="372" alt="image" src="https://github.com/user-attachments/assets/57a3c013-e182-4367-8559-532b406ff4a4" />  
+
+--- 
+
 <img width="597" height="365" alt="image" src="https://github.com/user-attachments/assets/757e4acf-1b80-4dc0-88a4-870561b9bc00" />
 
 ---
-
-### Custom Container
-
-<img width="562" height="232" alt="image" src="https://github.com/user-attachments/assets/dd5aa649-8450-4a5f-814d-5b4f3c86761a" /> 
 
 
 ---
