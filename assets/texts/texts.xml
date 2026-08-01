@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextDatabase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="texts.xsd" Version="4.26.0">
+  <Languages>
+    <Language Id="GB" />
+  </Languages>
+  <Texts>
+    <TextGroup Id="Group1" />
+    <TextGroup Id="Unsorted">
+      <Text Id="__SingleUse_YIHU" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">&lt;value&gt;</Translation>
+      </Text>
+      <Text Id="__SingleUse_SSGT" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">Passwprd:</Translation>
+      </Text>
+      <Text Id="__SingleUse_CK9K" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">User ID:</Translation>
+      </Text>
+      <Text Id="__SingleUse_B4GY" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">&lt;value&gt;</Translation>
+      </Text>
+      <Text Id="__SingleUse_G2AN" Alignment="Center" TypographyId="Default">
+        <Translation Language="GB">&#10;q&#10;</Translation>
+      </Text>
+      <Text Id="__SingleUse_OZ75" Alignment="Center" TypographyId="Default">
+        <Translation Language="GB">y</Translation>
+      </Text>
+      <Text Id="__SingleUse_FDT3" Alignment="Center" TypographyId="Default">
+        <Translation Language="GB">u</Translation>
+      </Text>
+      <Text Id="__SingleUse_FLVG" Alignment="Center" TypographyId="Default">
+        <Translation Language="GB">&#10;w&#10;</Translation>
+      </Text>
+      <Text Id="__SingleUse_S7OP" Alignment="Center" TypographyId="Default">
+        <Translation Language="GB">r</Translation>
+      </Text>
+      <Text Id="__SingleUse_61KU" Alignment="Center" TypographyId="Default">
+        <Translation Language="GB">t</Translation>
+      </Text>
+      <Text Id="__SingleUse_2TTY" Alignment="Center" TypographyId="Default">
+        <Translation Language="GB">&#10;e&#10;</Translation>
+      </Text>
+      <Text Id="__SingleUse_99OK" Alignment="Center" TypographyId="Default">
+        <Translation Language="GB">o</Translation>
+      </Text>
+      <Text Id="__SingleUse_I891" Alignment="Center" TypographyId="Default">
+        <Translation Language="GB">p</Translation>
+      </Text>
+      <Text Id="__SingleUse_YMVE" Alignment="Center" TypographyId="Default">
+        <Translation Language="GB">i</Translation>
+      </Text>
+      <Text Id="__SingleUse_YB9U" Alignment="Center" TypographyId="Default">
+        <Translation Language="GB">s</Translation>
+      </Text>
+      <Text Id="__SingleUse_PT7L" Alignment="Center" TypographyId="Default">
+        <Translation Language="GB">f</Translation>
+      </Text>
+      <Text Id="__SingleUse_0BQ7" Alignment="Center" TypographyId="Default">
+        <Translation Language="GB">a</Translation>
+      </Text>
+      <Text Id="__SingleUse_CN39" Alignment="Center" TypographyId="Default">
+        <Translation Language="GB">d</Translation>
+      </Text>
+      <Text Id="__SingleUse_6AJ8" Alignment="Center" TypographyId="Default">
+        <Translation Language="GB">g</Translation>
+      </Text>
+      <Text Id="__SingleUse_GOHK" Alignment="Center" TypographyId="Default">
+        <Translation Language="GB">h</Translation>
+      </Text>
+      <Text Id="__SingleUse_C1PR" Alignment="Center" TypographyId="Default">
+        <Translation Language="GB">l</Translation>
+      </Text>
+      <Text Id="__SingleUse_VV20" Alignment="Center" TypographyId="Default">
+        <Translation Language="GB">j</Translation>
+      </Text>
+      <Text Id="__SingleUse_M2CD" Alignment="Center" TypographyId="Default">
+        <Translation Language="GB">k</Translation>
+      </Text>
+      <Text Id="__SingleUse_DTDN" Alignment="Center" TypographyId="Default">
+        <Translation Language="GB">m</Translation>
+      </Text>
+      <Text Id="__SingleUse_MG6P" Alignment="Center" TypographyId="Default">
+        <Translation Language="GB">n</Translation>
+      </Text>
+      <Text Id="__SingleUse_NMIS" Alignment="Center" TypographyId="Default">
+        <Translation Language="GB">x</Translation>
+      </Text>
+      <Text Id="__SingleUse_CY63" Alignment="Center" TypographyId="Default">
+        <Translation Language="GB">b</Translation>
+      </Text>
+      <Text Id="__SingleUse_GTOH" Alignment="Center" TypographyId="Default">
+        <Translation Language="GB">v</Translation>
+      </Text>
+      <Text Id="__SingleUse_IGJB" Alignment="Center" TypographyId="Default">
+        <Translation Language="GB">c</Translation>
+      </Text>
+      <Text Id="__SingleUse_K900" Alignment="Center" TypographyId="Default">
+        <Translation Language="GB">z</Translation>
+      </Text>
+      <Text Id="__SingleUse_D8DP" Alignment="Center" TypographyId="Default">
+        <Translation Language="GB">Q</Translation>
+      </Text>
+      <Text Id="__SingleUse_ZLG7" Alignment="Center" TypographyId="Default">
+        <Translation Language="GB">Y</Translation>
+      </Text>
+      <Text Id="__SingleUse_63S3" Alignment="Center" TypographyId="Default">
+        <Translation Language="GB">U</Translation>
+      </Text>
+      <Text Id="__SingleUse_WBIQ" Alignment="Center" TypographyId="Default">
+        <Translation Language="GB">W</Translation>
+      </Text>
+      <Text Id="__SingleUse_74VP" Alignment="Center" TypographyId="Default">
+        <Translation Language="GB">R</Translation>
+      </Text>
+      <Text Id="__SingleUse_CB6Y" Alignment="Center" TypographyId="Default">
+        <Translation Language="GB">T</Translation>
+      </Text>
+      <Text Id="__SingleUse_QA7K" Alignment="Center" TypographyId="Default">
+        <Translation Language="GB">&#10;E&#10;</Translation>
+      </Text>
+      <Text Id="__SingleUse_KHUS" Alignment="Center" TypographyId="Default">
+        <Translation Language="GB">O</Translation>
+      </Text>
+      <Text Id="__SingleUse_YL7X" Alignment="Center" TypographyId="Default">
+        <Translation Language="GB">P</Translation>
+      </Text>
+      <Text Id="__SingleUse_PEXC" Alignment="Center" TypographyId="Default">
+        <Translation Language="GB">I</Translation>
+      </Text>
+      <Text Id="__SingleUse_UT3M" Alignment="Center" TypographyId="Default">
+        <Translation Language="GB">S</Translation>
+      </Text>
+      <Text Id="__SingleUse_U0EA" Alignment="Center" TypographyId="Default">
+        <Translation Language="GB">F</Translation>
+      </Text>
+      <Text Id="__SingleUse_XYW5" Alignment="Center" TypographyId="Default">
+        <Translation Language="GB">A</Translation>
+      </Text>
+      <Text Id="__SingleUse_8KRU" Alignment="Center" TypographyId="Default">
+        <Translation Language="GB">D</Translation>
+      </Text>
+      <Text Id="__SingleUse_ZYB1" Alignment="Center" TypographyId="Default">
+        <Translation Language="GB">G</Translation>
+      </Text>
+      <Text Id="__SingleUse_CUSD" Alignment="Center" TypographyId="Default">
+        <Translation Language="GB">H</Translation>
+      </Text>
+      <Text Id="__SingleUse_YX6Z" Alignment="Center" TypographyId="Default">
+        <Translation Language="GB">L</Translation>
+      </Text>
+      <Text Id="__SingleUse_AUIY" Alignment="Center" TypographyId="Default">
+        <Translation Language="GB">J</Translation>
+      </Text>
+      <Text Id="__SingleUse_Q18S" Alignment="Center" TypographyId="Default">
+        <Translation Language="GB">K</Translation>
+      </Text>
+      <Text Id="__SingleUse_W8DM" Alignment="Center" TypographyId="Default">
+        <Translation Language="GB">M</Translation>
+      </Text>
+      <Text Id="__SingleUse_4PMI" Alignment="Center" TypographyId="Default">
+        <Translation Language="GB">N</Translation>
+      </Text>
+      <Text Id="__SingleUse_DQ9O" Alignment="Center" TypographyId="Default">
+        <Translation Language="GB">X</Translation>
+      </Text>
+      <Text Id="__SingleUse_6FK1" Alignment="Center" TypographyId="Default">
+        <Translation Language="GB">B</Translation>
+      </Text>
+      <Text Id="__SingleUse_22VR" Alignment="Center" TypographyId="Default">
+        <Translation Language="GB">V</Translation>
+      </Text>
+      <Text Id="__SingleUse_1173" Alignment="Center" TypographyId="Default">
+        <Translation Language="GB">C</Translation>
+      </Text>
+      <Text Id="__SingleUse_YWMA" Alignment="Center" TypographyId="Default">
+        <Translation Language="GB">Z</Translation>
+      </Text>
+      <Text Id="__SingleUse_FF96" Alignment="Center" TypographyId="Default">
+        <Translation Language="GB">1</Translation>
+      </Text>
+      <Text Id="__SingleUse_TTMK" Alignment="Center" TypographyId="Default">
+        <Translation Language="GB">6</Translation>
+      </Text>
+      <Text Id="__SingleUse_6TRP" Alignment="Center" TypographyId="Default">
+        <Translation Language="GB">7</Translation>
+      </Text>
+      <Text Id="__SingleUse_XGB9" Alignment="Center" TypographyId="Default">
+        <Translation Language="GB">2</Translation>
+      </Text>
+      <Text Id="__SingleUse_VUD5" Alignment="Center" TypographyId="Default">
+        <Translation Language="GB">4</Translation>
+      </Text>
+      <Text Id="__SingleUse_UHOK" Alignment="Center" TypographyId="Default">
+        <Translation Language="GB">5</Translation>
+      </Text>
+      <Text Id="__SingleUse_0XUR" Alignment="Center" TypographyId="Default">
+        <Translation Language="GB">3</Translation>
+      </Text>
+      <Text Id="__SingleUse_DT04" Alignment="Center" TypographyId="Default">
+        <Translation Language="GB">9</Translation>
+      </Text>
+      <Text Id="__SingleUse_TN5O" Alignment="Center" TypographyId="Default">
+        <Translation Language="GB">0</Translation>
+      </Text>
+      <Text Id="__SingleUse_ZKL2" Alignment="Center" TypographyId="Default">
+        <Translation Language="GB">8</Translation>
+      </Text>
+      <Text Id="__SingleUse_64JW" Alignment="Center" TypographyId="Default">
+        <Translation Language="GB">*</Translation>
+      </Text>
+      <Text Id="__SingleUse_5KBN" Alignment="Center" TypographyId="Default">
+        <Translation Language="GB">=</Translation>
+      </Text>
+      <Text Id="__SingleUse_FSQJ" Alignment="Center" TypographyId="Default">
+        <Translation Language="GB">+</Translation>
+      </Text>
+      <Text Id="__SingleUse_F9XT" Alignment="Center" TypographyId="Default">
+        <Translation Language="GB">-</Translation>
+      </Text>
+      <Text Id="__SingleUse_JJWD" Alignment="Center" TypographyId="Default">
+        <Translation Language="GB">&lt;</Translation>
+      </Text>
+      <Text Id="__SingleUse_7V0F" Alignment="Center" TypographyId="Default">
+        <Translation Language="GB">&gt;</Translation>
+      </Text>
+      <Text Id="__SingleUse_05JD" Alignment="Center" TypographyId="Default">
+        <Translation Language="GB">@</Translation>
+      </Text>
+      <Text Id="__SingleUse_IZ9A" Alignment="Center" TypographyId="Default">
+        <Translation Language="GB">[</Translation>
+      </Text>
+      <Text Id="__SingleUse_PKK9" Alignment="Center" TypographyId="Default">
+        <Translation Language="GB">]</Translation>
+      </Text>
+      <Text Id="__SingleUse_M22H" Alignment="Center" TypographyId="Default">
+        <Translation Language="GB">?</Translation>
+      </Text>
+      <Text Id="__SingleUse_JH22" Alignment="Center" TypographyId="Default">
+        <Translation Language="GB">.</Translation>
+      </Text>
+      <Text Id="__SingleUse_MQ5E" Alignment="Center" TypographyId="Default">
+        <Translation Language="GB">;</Translation>
+      </Text>
+      <Text Id="__SingleUse_3BWI" Alignment="Center" TypographyId="Default">
+        <Translation Language="GB">#</Translation>
+      </Text>
+      <Text Id="__SingleUse_FUN0" Alignment="Center" TypographyId="Default">
+        <Translation Language="GB">:</Translation>
+      </Text>
+      <Text Id="__SingleUse_HJHT" Alignment="Center" TypographyId="Default">
+        <Translation Language="GB">_</Translation>
+      </Text>
+      <Text Id="__SingleUse_K4CB" Alignment="Center" TypographyId="Default">
+        <Translation Language="GB">&amp;</Translation>
+      </Text>
+      <Text Id="__SingleUse_OWOD" Alignment="Center" TypographyId="Default">
+        <Translation Language="GB">/</Translation>
+      </Text>
+      <Text Id="__SingleUse_2B3R" Alignment="Center" TypographyId="Small">
+        <Translation Language="GB">abc</Translation>
+      </Text>
+      <Text Id="__SingleUse_DIH6" Alignment="Center" TypographyId="Small">
+        <Translation Language="GB">123</Translation>
+      </Text>
+      <Text Id="__SingleUse_SVEG" Alignment="Center" TypographyId="Default">
+        <Translation Language="GB">Clear All</Translation>
+      </Text>
+    </TextGroup>
+  </Texts>
+  <Typographies>
+    <Typography Id="Default" Font="verdana.ttf" Size="20" Bpp="4" IsVector="no" Direction="LTR" FallbackCharacter="?" />
+    <Typography Id="Large" Font="verdana.ttf" Size="40" Bpp="4" IsVector="no" Direction="LTR" FallbackCharacter="?" />
+    <Typography Id="Small" Font="verdana.ttf" Size="15" Bpp="4" IsVector="no" Direction="LTR" FallbackCharacter="?" />
+  </Typographies>
+</TextDatabase>

@@ -1,0 +1,2936 @@
+{
+  "Application": {
+    "Screens": [
+      {
+        "Name": "Screen1",
+        "Components": [
+          {
+            "Type": "Box",
+            "Name": "box1",
+            "Width": 480,
+            "Height": 272,
+            "LockPosition": true,
+            "Color": {
+              "Red": 30,
+              "Green": 30,
+              "Blue": 47
+            }
+          },
+          {
+            "Type": "FlexButton",
+            "Name": "user_input",
+            "X": 120,
+            "Y": 17,
+            "Width": 343,
+            "Height": 25,
+            "ButtonTrigger": {
+              "Type": "ClickButtonTrigger"
+            },
+            "ButtonStyles": [
+              {
+                "Type": "BoxWithBorderButtonStyle",
+                "Width": 343,
+                "Height": 25,
+                "LockToFlexButtonSize": true,
+                "BorderSize": 2,
+                "ColorReleased": {
+                  "Red": 250,
+                  "Green": 253,
+                  "Blue": 255
+                },
+                "ColorPressed": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                },
+                "ColorBorderReleased": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                },
+                "ColorBorderPressed": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                }
+              }
+            ]
+          },
+          {
+            "Type": "FlexButton",
+            "Name": "pass_button",
+            "X": 120,
+            "Y": 59,
+            "Width": 343,
+            "Height": 25,
+            "ButtonTrigger": {
+              "Type": "ClickButtonTrigger"
+            },
+            "ButtonStyles": [
+              {
+                "Type": "BoxWithBorderButtonStyle",
+                "Width": 343,
+                "Height": 25,
+                "LockToFlexButtonSize": true,
+                "BorderSize": 2,
+                "ColorReleased": {
+                  "Red": 250,
+                  "Green": 253,
+                  "Blue": 255
+                },
+                "ColorPressed": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                },
+                "ColorBorderReleased": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                },
+                "ColorBorderPressed": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                }
+              }
+            ]
+          },
+          {
+            "Type": "TextArea",
+            "Name": "user_id_input",
+            "X": 121,
+            "Y": 19,
+            "Width": 342,
+            "Height": 21,
+            "TextId": "__SingleUse_B4GY",
+            "TextRotation": "0",
+            "Wildcard1": {
+              "UseBuffer": true,
+              "BufferSize": 30
+            }
+          },
+          {
+            "Type": "CustomContainerInstance",
+            "Name": "a_z_Custom_Container1",
+            "X": 19,
+            "Y": 91,
+            "Width": 443,
+            "Height": 181,
+            "Visible": false,
+            "CustomContainerDefinitionName": "a_z_Custom_Container"
+          },
+          {
+            "Type": "TextArea",
+            "Name": "user_id_text",
+            "X": 9,
+            "Y": 18,
+            "Width": 85,
+            "Height": 24,
+            "TextId": "__SingleUse_CK9K",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 252,
+              "Blue": 252
+            },
+            "AutoSize": true
+          },
+          {
+            "Type": "TextArea",
+            "Name": "password_text",
+            "X": 9,
+            "Y": 60,
+            "Width": 102,
+            "Height": 24,
+            "TextId": "__SingleUse_SSGT",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "AutoSize": true
+          },
+          {
+            "Type": "TextArea",
+            "Name": "pass_input",
+            "X": 121,
+            "Y": 59,
+            "Width": 311,
+            "Height": 25,
+            "TextId": "__SingleUse_YIHU",
+            "TextRotation": "0",
+            "Wildcard1": {
+              "UseBuffer": true,
+              "BufferSize": 20
+            }
+          },
+          {
+            "Type": "ButtonWithIcon",
+            "Name": "visible_button",
+            "X": 438,
+            "Y": 59,
+            "Width": 25,
+            "Height": 25,
+            "Pressed": "__generated\\icon_theme_images_action_visibility_25_25_000000.svg.png",
+            "Released": "__generated\\icon_theme_images_action_visibility_25_25_000000.svg.png",
+            "IconPressed": "__generated\\icon_theme_images_action_done_50_50_E8F6FB.svg.png",
+            "IconReleased": "__generated\\icon_theme_images_action_done_50_50_E8F6FB.svg.png",
+            "IconX": 97,
+            "IconHeight": 50,
+            "IconWidth": 50
+          },
+          {
+            "Type": "ButtonWithIcon",
+            "Name": "non_visible_buttom",
+            "X": 438,
+            "Y": 59,
+            "Width": 25,
+            "Height": 25,
+            "Visible": false,
+            "Pressed": "__generated\\icon_theme_images_action_visibility_off_25_25_000000.svg.png",
+            "Released": "__generated\\icon_theme_images_action_visibility_off_25_25_000000.svg.png",
+            "IconPressed": "__generated\\icon_theme_images_action_visibility_off_25_25_E8F6FB.svg.png",
+            "IconReleased": "__generated\\icon_theme_images_action_visibility_off_25_25_E8F6FB.svg.png",
+            "IconX": 97,
+            "IconHeight": 25,
+            "IconWidth": 25
+          }
+        ],
+        "Interactions": [
+          {
+            "InteractionName": "use_input_button_clikc",
+            "HasCompletedTrigger": true,
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "user_input"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "input_button_1"
+            }
+          },
+          {
+            "InteractionName": "pass_button_click",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "pass_button"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "pass_button_click"
+            }
+          },
+          {
+            "InteractionName": "visible_button_click",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "visible_button"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "visible_button_click"
+            }
+          },
+          {
+            "InteractionName": "non_visible_button_click",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "non_visible_buttom"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "non_visible_button_click"
+            }
+          }
+        ]
+      }
+    ],
+    "CustomContainerDefinitions": [
+      {
+        "Name": "a_z_Custom_Container",
+        "X": 19,
+        "Y": 91,
+        "Width": 443,
+        "Height": 181,
+        "Components": [
+          {
+            "Type": "Box",
+            "Name": "box2",
+            "Width": 443,
+            "Height": 181,
+            "LockPosition": true,
+            "Color": {
+              "Red": 30,
+              "Green": 30,
+              "Blue": 47
+            }
+          },
+          {
+            "Type": "Box",
+            "Name": "box1",
+            "Y": 2,
+            "Width": 443,
+            "Height": 179,
+            "Visible": false,
+            "LockPosition": true,
+            "Color": {
+              "Red": 42,
+              "Green": 42,
+              "Blue": 58
+            }
+          },
+          {
+            "Type": "Container",
+            "Name": "a_z_container",
+            "Width": 443,
+            "Height": 175,
+            "LockPosition": true,
+            "Components": [
+              {
+                "Type": "ButtonWithLabel",
+                "Name": "q_button",
+                "X": 6,
+                "Y": 2,
+                "Width": 36,
+                "Height": 36,
+                "LockPosition": true,
+                "Pressed": "__generated\\light_theme_images_widgets_button_icon_rounded_micro_outline_disabled.png",
+                "Released": "__generated\\light_theme_images_widgets_button_icon_rounded_micro_fill_disabled.png",
+                "TextId": "__SingleUse_G2AN",
+                "PressedColor": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                },
+                "TextRotation": "0"
+              },
+              {
+                "Type": "ButtonWithLabel",
+                "Name": "y_button",
+                "X": 223,
+                "Y": 2,
+                "Width": 36,
+                "Height": 36,
+                "LockPosition": true,
+                "Pressed": "__generated\\light_theme_images_widgets_button_icon_rounded_micro_outline_disabled.png",
+                "Released": "__generated\\light_theme_images_widgets_button_icon_rounded_micro_fill_disabled.png",
+                "TextId": "__SingleUse_OZ75",
+                "PressedColor": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                },
+                "TextRotation": "0"
+              },
+              {
+                "Type": "ButtonWithLabel",
+                "Name": "u_button",
+                "X": 267,
+                "Y": 2,
+                "Width": 36,
+                "Height": 36,
+                "LockPosition": true,
+                "Pressed": "__generated\\light_theme_images_widgets_button_icon_rounded_micro_outline_disabled.png",
+                "Released": "__generated\\light_theme_images_widgets_button_icon_rounded_micro_fill_disabled.png",
+                "TextId": "__SingleUse_FDT3",
+                "PressedColor": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                },
+                "TextRotation": "0"
+              },
+              {
+                "Type": "ButtonWithLabel",
+                "Name": "w_button",
+                "X": 49,
+                "Y": 2,
+                "Width": 36,
+                "Height": 36,
+                "LockPosition": true,
+                "Pressed": "__generated\\light_theme_images_widgets_button_icon_rounded_micro_outline_disabled.png",
+                "Released": "__generated\\light_theme_images_widgets_button_icon_rounded_micro_fill_disabled.png",
+                "TextId": "__SingleUse_FLVG",
+                "PressedColor": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                },
+                "TextRotation": "0"
+              },
+              {
+                "Type": "ButtonWithLabel",
+                "Name": "r_button",
+                "X": 134,
+                "Y": 2,
+                "Width": 36,
+                "Height": 36,
+                "LockPosition": true,
+                "Pressed": "__generated\\light_theme_images_widgets_button_icon_rounded_micro_outline_disabled.png",
+                "Released": "__generated\\light_theme_images_widgets_button_icon_rounded_micro_fill_disabled.png",
+                "TextId": "__SingleUse_S7OP",
+                "PressedColor": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                },
+                "TextRotation": "0"
+              },
+              {
+                "Type": "ButtonWithLabel",
+                "Name": "t_button",
+                "X": 178,
+                "Y": 2,
+                "Width": 36,
+                "Height": 36,
+                "LockPosition": true,
+                "Pressed": "__generated\\light_theme_images_widgets_button_icon_rounded_micro_outline_disabled.png",
+                "Released": "__generated\\light_theme_images_widgets_button_icon_rounded_micro_fill_disabled.png",
+                "TextId": "__SingleUse_61KU",
+                "PressedColor": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                },
+                "TextRotation": "0"
+              },
+              {
+                "Type": "ButtonWithLabel",
+                "Name": "e_button",
+                "X": 91,
+                "Y": 2,
+                "Width": 36,
+                "Height": 36,
+                "LockPosition": true,
+                "Pressed": "__generated\\light_theme_images_widgets_button_icon_rounded_micro_outline_disabled.png",
+                "Released": "__generated\\light_theme_images_widgets_button_icon_rounded_micro_fill_disabled.png",
+                "TextId": "__SingleUse_2TTY",
+                "PressedColor": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                },
+                "TextRotation": "0"
+              },
+              {
+                "Type": "ButtonWithLabel",
+                "Name": "o_button",
+                "X": 357,
+                "Y": 2,
+                "Width": 36,
+                "Height": 36,
+                "LockPosition": true,
+                "Pressed": "__generated\\light_theme_images_widgets_button_icon_rounded_micro_outline_disabled.png",
+                "Released": "__generated\\light_theme_images_widgets_button_icon_rounded_micro_fill_disabled.png",
+                "TextId": "__SingleUse_99OK",
+                "PressedColor": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                },
+                "TextRotation": "0"
+              },
+              {
+                "Type": "ButtonWithLabel",
+                "Name": "p_button",
+                "X": 400,
+                "Y": 2,
+                "Width": 36,
+                "Height": 36,
+                "LockPosition": true,
+                "Pressed": "__generated\\light_theme_images_widgets_button_icon_rounded_micro_outline_disabled.png",
+                "Released": "__generated\\light_theme_images_widgets_button_icon_rounded_micro_fill_disabled.png",
+                "TextId": "__SingleUse_I891",
+                "PressedColor": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                },
+                "TextRotation": "0"
+              },
+              {
+                "Type": "ButtonWithLabel",
+                "Name": "i_button",
+                "X": 312,
+                "Y": 2,
+                "Width": 36,
+                "Height": 36,
+                "LockPosition": true,
+                "Pressed": "__generated\\light_theme_images_widgets_button_icon_rounded_micro_outline_disabled.png",
+                "Released": "__generated\\light_theme_images_widgets_button_icon_rounded_micro_fill_disabled.png",
+                "TextId": "__SingleUse_YMVE",
+                "PressedColor": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                },
+                "TextRotation": "0"
+              },
+              {
+                "Type": "ButtonWithLabel",
+                "Name": "s_button",
+                "X": 91,
+                "Y": 52,
+                "Width": 36,
+                "Height": 36,
+                "LockPosition": true,
+                "Pressed": "__generated\\light_theme_images_widgets_button_icon_rounded_micro_outline_disabled.png",
+                "Released": "__generated\\light_theme_images_widgets_button_icon_rounded_micro_fill_disabled.png",
+                "TextId": "__SingleUse_YB9U",
+                "PressedColor": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                },
+                "TextRotation": "0"
+              },
+              {
+                "Type": "ButtonWithLabel",
+                "Name": "f_button",
+                "X": 178,
+                "Y": 52,
+                "Width": 36,
+                "Height": 36,
+                "LockPosition": true,
+                "Pressed": "__generated\\light_theme_images_widgets_button_icon_rounded_micro_outline_disabled.png",
+                "Released": "__generated\\light_theme_images_widgets_button_icon_rounded_micro_fill_disabled.png",
+                "TextId": "__SingleUse_PT7L",
+                "PressedColor": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                },
+                "TextRotation": "0"
+              },
+              {
+                "Type": "ButtonWithLabel",
+                "Name": "a_button",
+                "X": 49,
+                "Y": 52,
+                "Width": 36,
+                "Height": 36,
+                "LockPosition": true,
+                "Pressed": "__generated\\light_theme_images_widgets_button_icon_rounded_micro_outline_disabled.png",
+                "Released": "__generated\\light_theme_images_widgets_button_icon_rounded_micro_fill_disabled.png",
+                "TextId": "__SingleUse_0BQ7",
+                "PressedColor": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                },
+                "TextRotation": "0"
+              },
+              {
+                "Type": "ButtonWithLabel",
+                "Name": "d_button",
+                "X": 134,
+                "Y": 52,
+                "Width": 36,
+                "Height": 36,
+                "LockPosition": true,
+                "Pressed": "__generated\\light_theme_images_widgets_button_icon_rounded_micro_outline_disabled.png",
+                "Released": "__generated\\light_theme_images_widgets_button_icon_rounded_micro_fill_disabled.png",
+                "TextId": "__SingleUse_CN39",
+                "PressedColor": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                },
+                "TextRotation": "0"
+              },
+              {
+                "Type": "ButtonWithLabel",
+                "Name": "g_button",
+                "X": 223,
+                "Y": 52,
+                "Width": 36,
+                "Height": 36,
+                "LockPosition": true,
+                "Pressed": "__generated\\light_theme_images_widgets_button_icon_rounded_micro_outline_disabled.png",
+                "Released": "__generated\\light_theme_images_widgets_button_icon_rounded_micro_fill_disabled.png",
+                "TextId": "__SingleUse_6AJ8",
+                "PressedColor": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                },
+                "TextRotation": "0"
+              },
+              {
+                "Type": "ButtonWithLabel",
+                "Name": "h_button",
+                "X": 267,
+                "Y": 52,
+                "Width": 36,
+                "Height": 36,
+                "LockPosition": true,
+                "Pressed": "__generated\\light_theme_images_widgets_button_icon_rounded_micro_outline_disabled.png",
+                "Released": "__generated\\light_theme_images_widgets_button_icon_rounded_micro_fill_disabled.png",
+                "TextId": "__SingleUse_GOHK",
+                "PressedColor": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                },
+                "TextRotation": "0"
+              },
+              {
+                "Type": "ButtonWithLabel",
+                "Name": "l_button",
+                "X": 49,
+                "Y": 100,
+                "Width": 36,
+                "Height": 36,
+                "LockPosition": true,
+                "Pressed": "__generated\\light_theme_images_widgets_button_icon_rounded_micro_outline_disabled.png",
+                "Released": "__generated\\light_theme_images_widgets_button_icon_rounded_micro_fill_disabled.png",
+                "TextId": "__SingleUse_C1PR",
+                "PressedColor": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                },
+                "TextRotation": "0"
+              },
+              {
+                "Type": "ButtonWithLabel",
+                "Name": "j_button",
+                "X": 312,
+                "Y": 52,
+                "Width": 36,
+                "Height": 36,
+                "LockPosition": true,
+                "Pressed": "__generated\\light_theme_images_widgets_button_icon_rounded_micro_outline_disabled.png",
+                "Released": "__generated\\light_theme_images_widgets_button_icon_rounded_micro_fill_disabled.png",
+                "TextId": "__SingleUse_VV20",
+                "PressedColor": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                },
+                "TextRotation": "0"
+              },
+              {
+                "Type": "ButtonWithLabel",
+                "Name": "k_button",
+                "X": 357,
+                "Y": 52,
+                "Width": 36,
+                "Height": 36,
+                "LockPosition": true,
+                "Pressed": "__generated\\light_theme_images_widgets_button_icon_rounded_micro_outline_disabled.png",
+                "Released": "__generated\\light_theme_images_widgets_button_icon_rounded_micro_fill_disabled.png",
+                "TextId": "__SingleUse_M2CD",
+                "PressedColor": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                },
+                "TextRotation": "0"
+              },
+              {
+                "Type": "ButtonWithLabel",
+                "Name": "m_button",
+                "X": 357,
+                "Y": 100,
+                "Width": 36,
+                "Height": 36,
+                "LockPosition": true,
+                "Pressed": "__generated\\light_theme_images_widgets_button_icon_rounded_micro_outline_disabled.png",
+                "Released": "__generated\\light_theme_images_widgets_button_icon_rounded_micro_fill_disabled.png",
+                "TextId": "__SingleUse_DTDN",
+                "PressedColor": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                },
+                "TextRotation": "0"
+              },
+              {
+                "Type": "ButtonWithLabel",
+                "Name": "n_button",
+                "X": 312,
+                "Y": 100,
+                "Width": 36,
+                "Height": 36,
+                "LockPosition": true,
+                "Pressed": "__generated\\light_theme_images_widgets_button_icon_rounded_micro_outline_disabled.png",
+                "Released": "__generated\\light_theme_images_widgets_button_icon_rounded_micro_fill_disabled.png",
+                "TextId": "__SingleUse_MG6P",
+                "PressedColor": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                },
+                "TextRotation": "0"
+              },
+              {
+                "Type": "ButtonWithLabel",
+                "Name": "x_button",
+                "X": 134,
+                "Y": 100,
+                "Width": 36,
+                "Height": 36,
+                "LockPosition": true,
+                "Pressed": "__generated\\light_theme_images_widgets_button_icon_rounded_micro_outline_disabled.png",
+                "Released": "__generated\\light_theme_images_widgets_button_icon_rounded_micro_fill_disabled.png",
+                "TextId": "__SingleUse_NMIS",
+                "PressedColor": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                },
+                "TextRotation": "0"
+              },
+              {
+                "Type": "ButtonWithLabel",
+                "Name": "b_button",
+                "X": 267,
+                "Y": 100,
+                "Width": 36,
+                "Height": 36,
+                "LockPosition": true,
+                "Pressed": "__generated\\light_theme_images_widgets_button_icon_rounded_micro_outline_disabled.png",
+                "Released": "__generated\\light_theme_images_widgets_button_icon_rounded_micro_fill_disabled.png",
+                "TextId": "__SingleUse_CY63",
+                "PressedColor": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                },
+                "TextRotation": "0"
+              },
+              {
+                "Type": "ButtonWithLabel",
+                "Name": "v_button",
+                "X": 223,
+                "Y": 100,
+                "Width": 36,
+                "Height": 36,
+                "LockPosition": true,
+                "Pressed": "__generated\\light_theme_images_widgets_button_icon_rounded_micro_outline_disabled.png",
+                "Released": "__generated\\light_theme_images_widgets_button_icon_rounded_micro_fill_disabled.png",
+                "TextId": "__SingleUse_GTOH",
+                "PressedColor": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                },
+                "TextRotation": "0"
+              },
+              {
+                "Type": "ButtonWithLabel",
+                "Name": "c_button",
+                "X": 178,
+                "Y": 100,
+                "Width": 36,
+                "Height": 36,
+                "LockPosition": true,
+                "Pressed": "__generated\\light_theme_images_widgets_button_icon_rounded_micro_outline_disabled.png",
+                "Released": "__generated\\light_theme_images_widgets_button_icon_rounded_micro_fill_disabled.png",
+                "TextId": "__SingleUse_IGJB",
+                "PressedColor": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                },
+                "TextRotation": "0"
+              },
+              {
+                "Type": "ButtonWithLabel",
+                "Name": "z_button",
+                "X": 91,
+                "Y": 100,
+                "Width": 36,
+                "Height": 36,
+                "LockPosition": true,
+                "Pressed": "__generated\\light_theme_images_widgets_button_icon_rounded_micro_outline_disabled.png",
+                "Released": "__generated\\light_theme_images_widgets_button_icon_rounded_micro_fill_disabled.png",
+                "TextId": "__SingleUse_K900",
+                "PressedColor": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                },
+                "TextRotation": "0"
+              }
+            ]
+          },
+          {
+            "Type": "Container",
+            "Name": "A_Z_container",
+            "Width": 443,
+            "Height": 175,
+            "Visible": false,
+            "LockPosition": true,
+            "Components": [
+              {
+                "Type": "ButtonWithLabel",
+                "Name": "Q_button",
+                "X": 6,
+                "Y": 2,
+                "Width": 36,
+                "Height": 36,
+                "LockPosition": true,
+                "Pressed": "__generated\\light_theme_images_widgets_button_icon_rounded_micro_outline_disabled.png",
+                "Released": "__generated\\light_theme_images_widgets_button_icon_rounded_micro_fill_disabled.png",
+                "TextId": "__SingleUse_D8DP",
+                "PressedColor": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                },
+                "TextRotation": "0"
+              },
+              {
+                "Type": "ButtonWithLabel",
+                "Name": "Y_button",
+                "X": 223,
+                "Y": 2,
+                "Width": 36,
+                "Height": 36,
+                "LockPosition": true,
+                "Pressed": "__generated\\light_theme_images_widgets_button_icon_rounded_micro_outline_disabled.png",
+                "Released": "__generated\\light_theme_images_widgets_button_icon_rounded_micro_fill_disabled.png",
+                "TextId": "__SingleUse_ZLG7",
+                "PressedColor": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                },
+                "TextRotation": "0"
+              },
+              {
+                "Type": "ButtonWithLabel",
+                "Name": "U_button",
+                "X": 267,
+                "Y": 2,
+                "Width": 36,
+                "Height": 36,
+                "LockPosition": true,
+                "Pressed": "__generated\\light_theme_images_widgets_button_icon_rounded_micro_outline_disabled.png",
+                "Released": "__generated\\light_theme_images_widgets_button_icon_rounded_micro_fill_disabled.png",
+                "TextId": "__SingleUse_63S3",
+                "PressedColor": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                },
+                "TextRotation": "0"
+              },
+              {
+                "Type": "ButtonWithLabel",
+                "Name": "W_button",
+                "X": 49,
+                "Y": 2,
+                "Width": 36,
+                "Height": 36,
+                "LockPosition": true,
+                "Pressed": "__generated\\light_theme_images_widgets_button_icon_rounded_micro_outline_disabled.png",
+                "Released": "__generated\\light_theme_images_widgets_button_icon_rounded_micro_fill_disabled.png",
+                "TextId": "__SingleUse_WBIQ",
+                "PressedColor": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                },
+                "TextRotation": "0"
+              },
+              {
+                "Type": "ButtonWithLabel",
+                "Name": "R_button",
+                "X": 134,
+                "Y": 2,
+                "Width": 36,
+                "Height": 36,
+                "LockPosition": true,
+                "Pressed": "__generated\\light_theme_images_widgets_button_icon_rounded_micro_outline_disabled.png",
+                "Released": "__generated\\light_theme_images_widgets_button_icon_rounded_micro_fill_disabled.png",
+                "TextId": "__SingleUse_74VP",
+                "PressedColor": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                },
+                "TextRotation": "0"
+              },
+              {
+                "Type": "ButtonWithLabel",
+                "Name": "T_button",
+                "X": 178,
+                "Y": 2,
+                "Width": 36,
+                "Height": 36,
+                "LockPosition": true,
+                "Pressed": "__generated\\light_theme_images_widgets_button_icon_rounded_micro_outline_disabled.png",
+                "Released": "__generated\\light_theme_images_widgets_button_icon_rounded_micro_fill_disabled.png",
+                "TextId": "__SingleUse_CB6Y",
+                "PressedColor": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                },
+                "TextRotation": "0"
+              },
+              {
+                "Type": "ButtonWithLabel",
+                "Name": "E_button",
+                "X": 91,
+                "Y": 2,
+                "Width": 36,
+                "Height": 36,
+                "LockPosition": true,
+                "Pressed": "__generated\\light_theme_images_widgets_button_icon_rounded_micro_outline_disabled.png",
+                "Released": "__generated\\light_theme_images_widgets_button_icon_rounded_micro_fill_disabled.png",
+                "TextId": "__SingleUse_QA7K",
+                "PressedColor": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                },
+                "TextRotation": "0"
+              },
+              {
+                "Type": "ButtonWithLabel",
+                "Name": "O_button",
+                "X": 357,
+                "Y": 2,
+                "Width": 36,
+                "Height": 36,
+                "LockPosition": true,
+                "Pressed": "__generated\\light_theme_images_widgets_button_icon_rounded_micro_outline_disabled.png",
+                "Released": "__generated\\light_theme_images_widgets_button_icon_rounded_micro_fill_disabled.png",
+                "TextId": "__SingleUse_KHUS",
+                "PressedColor": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                },
+                "TextRotation": "0"
+              },
+              {
+                "Type": "ButtonWithLabel",
+                "Name": "P_button",
+                "X": 400,
+                "Y": 2,
+                "Width": 36,
+                "Height": 36,
+                "LockPosition": true,
+                "Pressed": "__generated\\light_theme_images_widgets_button_icon_rounded_micro_outline_disabled.png",
+                "Released": "__generated\\light_theme_images_widgets_button_icon_rounded_micro_fill_disabled.png",
+                "TextId": "__SingleUse_YL7X",
+                "PressedColor": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                },
+                "TextRotation": "0"
+              },
+              {
+                "Type": "ButtonWithLabel",
+                "Name": "I_button",
+                "X": 312,
+                "Y": 2,
+                "Width": 36,
+                "Height": 36,
+                "LockPosition": true,
+                "Pressed": "__generated\\light_theme_images_widgets_button_icon_rounded_micro_outline_disabled.png",
+                "Released": "__generated\\light_theme_images_widgets_button_icon_rounded_micro_fill_disabled.png",
+                "TextId": "__SingleUse_PEXC",
+                "PressedColor": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                },
+                "TextRotation": "0"
+              },
+              {
+                "Type": "ButtonWithLabel",
+                "Name": "S_button",
+                "X": 91,
+                "Y": 52,
+                "Width": 36,
+                "Height": 36,
+                "LockPosition": true,
+                "Pressed": "__generated\\light_theme_images_widgets_button_icon_rounded_micro_outline_disabled.png",
+                "Released": "__generated\\light_theme_images_widgets_button_icon_rounded_micro_fill_disabled.png",
+                "TextId": "__SingleUse_UT3M",
+                "PressedColor": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                },
+                "TextRotation": "0"
+              },
+              {
+                "Type": "ButtonWithLabel",
+                "Name": "F_button",
+                "X": 178,
+                "Y": 52,
+                "Width": 36,
+                "Height": 36,
+                "LockPosition": true,
+                "Pressed": "__generated\\light_theme_images_widgets_button_icon_rounded_micro_outline_disabled.png",
+                "Released": "__generated\\light_theme_images_widgets_button_icon_rounded_micro_fill_disabled.png",
+                "TextId": "__SingleUse_U0EA",
+                "PressedColor": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                },
+                "TextRotation": "0"
+              },
+              {
+                "Type": "ButtonWithLabel",
+                "Name": "A_button",
+                "X": 49,
+                "Y": 52,
+                "Width": 36,
+                "Height": 36,
+                "LockPosition": true,
+                "Pressed": "__generated\\light_theme_images_widgets_button_icon_rounded_micro_outline_disabled.png",
+                "Released": "__generated\\light_theme_images_widgets_button_icon_rounded_micro_fill_disabled.png",
+                "TextId": "__SingleUse_XYW5",
+                "PressedColor": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                },
+                "TextRotation": "0"
+              },
+              {
+                "Type": "ButtonWithLabel",
+                "Name": "D_button",
+                "X": 134,
+                "Y": 52,
+                "Width": 36,
+                "Height": 36,
+                "LockPosition": true,
+                "Pressed": "__generated\\light_theme_images_widgets_button_icon_rounded_micro_outline_disabled.png",
+                "Released": "__generated\\light_theme_images_widgets_button_icon_rounded_micro_fill_disabled.png",
+                "TextId": "__SingleUse_8KRU",
+                "PressedColor": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                },
+                "TextRotation": "0"
+              },
+              {
+                "Type": "ButtonWithLabel",
+                "Name": "G_button",
+                "X": 223,
+                "Y": 52,
+                "Width": 36,
+                "Height": 36,
+                "LockPosition": true,
+                "Pressed": "__generated\\light_theme_images_widgets_button_icon_rounded_micro_outline_disabled.png",
+                "Released": "__generated\\light_theme_images_widgets_button_icon_rounded_micro_fill_disabled.png",
+                "TextId": "__SingleUse_ZYB1",
+                "PressedColor": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                },
+                "TextRotation": "0"
+              },
+              {
+                "Type": "ButtonWithLabel",
+                "Name": "H_button",
+                "X": 267,
+                "Y": 52,
+                "Width": 36,
+                "Height": 36,
+                "LockPosition": true,
+                "Pressed": "__generated\\light_theme_images_widgets_button_icon_rounded_micro_outline_disabled.png",
+                "Released": "__generated\\light_theme_images_widgets_button_icon_rounded_micro_fill_disabled.png",
+                "TextId": "__SingleUse_CUSD",
+                "PressedColor": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                },
+                "TextRotation": "0"
+              },
+              {
+                "Type": "ButtonWithLabel",
+                "Name": "L_button",
+                "X": 49,
+                "Y": 100,
+                "Width": 36,
+                "Height": 36,
+                "LockPosition": true,
+                "Pressed": "__generated\\light_theme_images_widgets_button_icon_rounded_micro_outline_disabled.png",
+                "Released": "__generated\\light_theme_images_widgets_button_icon_rounded_micro_fill_disabled.png",
+                "TextId": "__SingleUse_YX6Z",
+                "PressedColor": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                },
+                "TextRotation": "0"
+              },
+              {
+                "Type": "ButtonWithLabel",
+                "Name": "J_button",
+                "X": 312,
+                "Y": 52,
+                "Width": 36,
+                "Height": 36,
+                "LockPosition": true,
+                "Pressed": "__generated\\light_theme_images_widgets_button_icon_rounded_micro_outline_disabled.png",
+                "Released": "__generated\\light_theme_images_widgets_button_icon_rounded_micro_fill_disabled.png",
+                "TextId": "__SingleUse_AUIY",
+                "PressedColor": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                },
+                "TextRotation": "0"
+              },
+              {
+                "Type": "ButtonWithLabel",
+                "Name": "K_button",
+                "X": 357,
+                "Y": 52,
+                "Width": 36,
+                "Height": 36,
+                "LockPosition": true,
+                "Pressed": "__generated\\light_theme_images_widgets_button_icon_rounded_micro_outline_disabled.png",
+                "Released": "__generated\\light_theme_images_widgets_button_icon_rounded_micro_fill_disabled.png",
+                "TextId": "__SingleUse_Q18S",
+                "PressedColor": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                },
+                "TextRotation": "0"
+              },
+              {
+                "Type": "ButtonWithLabel",
+                "Name": "M_button",
+                "X": 357,
+                "Y": 100,
+                "Width": 36,
+                "Height": 36,
+                "LockPosition": true,
+                "Pressed": "__generated\\light_theme_images_widgets_button_icon_rounded_micro_outline_disabled.png",
+                "Released": "__generated\\light_theme_images_widgets_button_icon_rounded_micro_fill_disabled.png",
+                "TextId": "__SingleUse_W8DM",
+                "PressedColor": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                },
+                "TextRotation": "0"
+              },
+              {
+                "Type": "ButtonWithLabel",
+                "Name": "N_button",
+                "X": 312,
+                "Y": 100,
+                "Width": 36,
+                "Height": 36,
+                "LockPosition": true,
+                "Pressed": "__generated\\light_theme_images_widgets_button_icon_rounded_micro_outline_disabled.png",
+                "Released": "__generated\\light_theme_images_widgets_button_icon_rounded_micro_fill_disabled.png",
+                "TextId": "__SingleUse_4PMI",
+                "PressedColor": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                },
+                "TextRotation": "0"
+              },
+              {
+                "Type": "ButtonWithLabel",
+                "Name": "X_button",
+                "X": 134,
+                "Y": 100,
+                "Width": 36,
+                "Height": 36,
+                "LockPosition": true,
+                "Pressed": "__generated\\light_theme_images_widgets_button_icon_rounded_micro_outline_disabled.png",
+                "Released": "__generated\\light_theme_images_widgets_button_icon_rounded_micro_fill_disabled.png",
+                "TextId": "__SingleUse_DQ9O",
+                "PressedColor": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                },
+                "TextRotation": "0"
+              },
+              {
+                "Type": "ButtonWithLabel",
+                "Name": "B_button",
+                "X": 267,
+                "Y": 100,
+                "Width": 36,
+                "Height": 36,
+                "LockPosition": true,
+                "Pressed": "__generated\\light_theme_images_widgets_button_icon_rounded_micro_outline_disabled.png",
+                "Released": "__generated\\light_theme_images_widgets_button_icon_rounded_micro_fill_disabled.png",
+                "TextId": "__SingleUse_6FK1",
+                "PressedColor": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                },
+                "TextRotation": "0"
+              },
+              {
+                "Type": "ButtonWithLabel",
+                "Name": "V_button",
+                "X": 223,
+                "Y": 100,
+                "Width": 36,
+                "Height": 36,
+                "LockPosition": true,
+                "Pressed": "__generated\\light_theme_images_widgets_button_icon_rounded_micro_outline_disabled.png",
+                "Released": "__generated\\light_theme_images_widgets_button_icon_rounded_micro_fill_disabled.png",
+                "TextId": "__SingleUse_22VR",
+                "PressedColor": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                },
+                "TextRotation": "0"
+              },
+              {
+                "Type": "ButtonWithLabel",
+                "Name": "C_button",
+                "X": 178,
+                "Y": 100,
+                "Width": 36,
+                "Height": 36,
+                "LockPosition": true,
+                "Pressed": "__generated\\light_theme_images_widgets_button_icon_rounded_micro_outline_disabled.png",
+                "Released": "__generated\\light_theme_images_widgets_button_icon_rounded_micro_fill_disabled.png",
+                "TextId": "__SingleUse_1173",
+                "PressedColor": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                },
+                "TextRotation": "0"
+              },
+              {
+                "Type": "ButtonWithLabel",
+                "Name": "Z_button",
+                "X": 91,
+                "Y": 100,
+                "Width": 36,
+                "Height": 36,
+                "LockPosition": true,
+                "Pressed": "__generated\\light_theme_images_widgets_button_icon_rounded_micro_outline_disabled.png",
+                "Released": "__generated\\light_theme_images_widgets_button_icon_rounded_micro_fill_disabled.png",
+                "TextId": "__SingleUse_YWMA",
+                "PressedColor": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                },
+                "TextRotation": "0"
+              }
+            ]
+          },
+          {
+            "Type": "Container",
+            "Name": "num_key_container",
+            "Width": 443,
+            "Height": 175,
+            "Visible": false,
+            "LockPosition": true,
+            "Components": [
+              {
+                "Type": "ButtonWithLabel",
+                "Name": "one_button",
+                "X": 6,
+                "Y": 2,
+                "Width": 36,
+                "Height": 36,
+                "Pressed": "__generated\\light_theme_images_widgets_button_icon_rounded_micro_outline_disabled.png",
+                "Released": "__generated\\light_theme_images_widgets_button_icon_rounded_micro_fill_disabled.png",
+                "TextId": "__SingleUse_FF96",
+                "PressedColor": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                },
+                "TextRotation": "0"
+              },
+              {
+                "Type": "ButtonWithLabel",
+                "Name": "six_button",
+                "X": 223,
+                "Y": 2,
+                "Width": 36,
+                "Height": 36,
+                "LockPosition": true,
+                "Pressed": "__generated\\light_theme_images_widgets_button_icon_rounded_micro_outline_disabled.png",
+                "Released": "__generated\\light_theme_images_widgets_button_icon_rounded_micro_fill_disabled.png",
+                "TextId": "__SingleUse_TTMK",
+                "PressedColor": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                },
+                "TextRotation": "0"
+              },
+              {
+                "Type": "ButtonWithLabel",
+                "Name": "seven_button",
+                "X": 267,
+                "Y": 2,
+                "Width": 36,
+                "Height": 36,
+                "LockPosition": true,
+                "Pressed": "__generated\\light_theme_images_widgets_button_icon_rounded_micro_outline_disabled.png",
+                "Released": "__generated\\light_theme_images_widgets_button_icon_rounded_micro_fill_disabled.png",
+                "TextId": "__SingleUse_6TRP",
+                "PressedColor": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                },
+                "TextRotation": "0"
+              },
+              {
+                "Type": "ButtonWithLabel",
+                "Name": "two_button",
+                "X": 49,
+                "Y": 2,
+                "Width": 36,
+                "Height": 36,
+                "LockPosition": true,
+                "Pressed": "__generated\\light_theme_images_widgets_button_icon_rounded_micro_outline_disabled.png",
+                "Released": "__generated\\light_theme_images_widgets_button_icon_rounded_micro_fill_disabled.png",
+                "TextId": "__SingleUse_XGB9",
+                "PressedColor": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                },
+                "TextRotation": "0"
+              },
+              {
+                "Type": "ButtonWithLabel",
+                "Name": "four_button",
+                "X": 134,
+                "Y": 2,
+                "Width": 36,
+                "Height": 36,
+                "LockPosition": true,
+                "Pressed": "__generated\\light_theme_images_widgets_button_icon_rounded_micro_outline_disabled.png",
+                "Released": "__generated\\light_theme_images_widgets_button_icon_rounded_micro_fill_disabled.png",
+                "TextId": "__SingleUse_VUD5",
+                "PressedColor": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                },
+                "TextRotation": "0"
+              },
+              {
+                "Type": "ButtonWithLabel",
+                "Name": "five_button_1",
+                "X": 178,
+                "Y": 2,
+                "Width": 36,
+                "Height": 36,
+                "LockPosition": true,
+                "Pressed": "__generated\\light_theme_images_widgets_button_icon_rounded_micro_outline_disabled.png",
+                "Released": "__generated\\light_theme_images_widgets_button_icon_rounded_micro_fill_disabled.png",
+                "TextId": "__SingleUse_UHOK",
+                "PressedColor": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                },
+                "TextRotation": "0"
+              },
+              {
+                "Type": "ButtonWithLabel",
+                "Name": "three_button",
+                "X": 91,
+                "Y": 2,
+                "Width": 36,
+                "Height": 36,
+                "LockPosition": true,
+                "Pressed": "__generated\\light_theme_images_widgets_button_icon_rounded_micro_outline_disabled.png",
+                "Released": "__generated\\light_theme_images_widgets_button_icon_rounded_micro_fill_disabled.png",
+                "TextId": "__SingleUse_0XUR",
+                "PressedColor": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                },
+                "TextRotation": "0"
+              },
+              {
+                "Type": "ButtonWithLabel",
+                "Name": "nine_button_1",
+                "X": 357,
+                "Y": 2,
+                "Width": 36,
+                "Height": 36,
+                "LockPosition": true,
+                "Pressed": "__generated\\light_theme_images_widgets_button_icon_rounded_micro_outline_disabled.png",
+                "Released": "__generated\\light_theme_images_widgets_button_icon_rounded_micro_fill_disabled.png",
+                "TextId": "__SingleUse_DT04",
+                "PressedColor": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                },
+                "TextRotation": "0"
+              },
+              {
+                "Type": "ButtonWithLabel",
+                "Name": "zero_button",
+                "X": 400,
+                "Y": 2,
+                "Width": 36,
+                "Height": 36,
+                "LockPosition": true,
+                "Pressed": "__generated\\light_theme_images_widgets_button_icon_rounded_micro_outline_disabled.png",
+                "Released": "__generated\\light_theme_images_widgets_button_icon_rounded_micro_fill_disabled.png",
+                "TextId": "__SingleUse_TN5O",
+                "PressedColor": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                },
+                "TextRotation": "0"
+              },
+              {
+                "Type": "ButtonWithLabel",
+                "Name": "eight_button",
+                "X": 312,
+                "Y": 2,
+                "Width": 36,
+                "Height": 36,
+                "LockPosition": true,
+                "Pressed": "__generated\\light_theme_images_widgets_button_icon_rounded_micro_outline_disabled.png",
+                "Released": "__generated\\light_theme_images_widgets_button_icon_rounded_micro_fill_disabled.png",
+                "TextId": "__SingleUse_ZKL2",
+                "PressedColor": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                },
+                "TextRotation": "0"
+              },
+              {
+                "Type": "ButtonWithLabel",
+                "Name": "multiplie_button",
+                "X": 49,
+                "Y": 52,
+                "Width": 36,
+                "Height": 36,
+                "LockPosition": true,
+                "Pressed": "__generated\\light_theme_images_widgets_button_icon_rounded_micro_outline_disabled.png",
+                "Released": "__generated\\light_theme_images_widgets_button_icon_rounded_micro_fill_disabled.png",
+                "TextId": "__SingleUse_64JW",
+                "PressedColor": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                },
+                "TextRotation": "0"
+              },
+              {
+                "Type": "ButtonWithLabel",
+                "Name": "equal_button",
+                "X": 178,
+                "Y": 52,
+                "Width": 36,
+                "Height": 36,
+                "LockPosition": true,
+                "Pressed": "__generated\\light_theme_images_widgets_button_icon_rounded_micro_outline_disabled.png",
+                "Released": "__generated\\light_theme_images_widgets_button_icon_rounded_micro_fill_disabled.png",
+                "TextId": "__SingleUse_5KBN",
+                "PressedColor": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                },
+                "TextRotation": "0"
+              },
+              {
+                "Type": "ButtonWithLabel",
+                "Name": "PlusSign_button",
+                "X": 6,
+                "Y": 52,
+                "Width": 36,
+                "Height": 36,
+                "LockPosition": true,
+                "Pressed": "__generated\\light_theme_images_widgets_button_icon_rounded_micro_outline_disabled.png",
+                "Released": "__generated\\light_theme_images_widgets_button_icon_rounded_micro_fill_disabled.png",
+                "TextId": "__SingleUse_FSQJ",
+                "PressedColor": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                },
+                "TextRotation": "0"
+              },
+              {
+                "Type": "ButtonWithLabel",
+                "Name": "minus_sign_button",
+                "X": 134,
+                "Y": 52,
+                "Width": 36,
+                "Height": 36,
+                "LockPosition": true,
+                "Pressed": "__generated\\light_theme_images_widgets_button_icon_rounded_micro_outline_disabled.png",
+                "Released": "__generated\\light_theme_images_widgets_button_icon_rounded_micro_fill_disabled.png",
+                "TextId": "__SingleUse_F9XT",
+                "PressedColor": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                },
+                "TextRotation": "0"
+              },
+              {
+                "Type": "ButtonWithLabel",
+                "Name": "Anglebrackets_right",
+                "X": 223,
+                "Y": 52,
+                "Width": 36,
+                "Height": 36,
+                "LockPosition": true,
+                "Pressed": "__generated\\light_theme_images_widgets_button_icon_rounded_micro_outline_disabled.png",
+                "Released": "__generated\\light_theme_images_widgets_button_icon_rounded_micro_fill_disabled.png",
+                "TextId": "__SingleUse_JJWD",
+                "PressedColor": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                },
+                "TextRotation": "0"
+              },
+              {
+                "Type": "ButtonWithLabel",
+                "Name": "Anglebrackets_left",
+                "X": 267,
+                "Y": 52,
+                "Width": 36,
+                "Height": 36,
+                "LockPosition": true,
+                "Pressed": "__generated\\light_theme_images_widgets_button_icon_rounded_micro_outline_disabled.png",
+                "Released": "__generated\\light_theme_images_widgets_button_icon_rounded_micro_fill_disabled.png",
+                "TextId": "__SingleUse_7V0F",
+                "PressedColor": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                },
+                "TextRotation": "0"
+              },
+              {
+                "Type": "ButtonWithLabel",
+                "Name": "at_symbol_button",
+                "X": 49,
+                "Y": 100,
+                "Width": 36,
+                "Height": 36,
+                "LockPosition": true,
+                "Pressed": "__generated\\light_theme_images_widgets_button_icon_rounded_micro_outline_disabled.png",
+                "Released": "__generated\\light_theme_images_widgets_button_icon_rounded_micro_fill_disabled.png",
+                "TextId": "__SingleUse_05JD",
+                "PressedColor": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                },
+                "TextRotation": "0"
+              },
+              {
+                "Type": "ButtonWithLabel",
+                "Name": "Square_brackets_right",
+                "X": 312,
+                "Y": 52,
+                "Width": 36,
+                "Height": 36,
+                "LockPosition": true,
+                "Pressed": "__generated\\light_theme_images_widgets_button_icon_rounded_micro_outline_disabled.png",
+                "Released": "__generated\\light_theme_images_widgets_button_icon_rounded_micro_fill_disabled.png",
+                "TextId": "__SingleUse_IZ9A",
+                "PressedColor": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                },
+                "TextRotation": "0"
+              },
+              {
+                "Type": "ButtonWithLabel",
+                "Name": "square_brack_left",
+                "X": 357,
+                "Y": 52,
+                "Width": 36,
+                "Height": 36,
+                "LockPosition": true,
+                "Pressed": "__generated\\light_theme_images_widgets_button_icon_rounded_micro_outline_disabled.png",
+                "Released": "__generated\\light_theme_images_widgets_button_icon_rounded_micro_fill_disabled.png",
+                "TextId": "__SingleUse_PKK9",
+                "PressedColor": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                },
+                "TextRotation": "0"
+              },
+              {
+                "Type": "ButtonWithLabel",
+                "Name": "questionmark_button",
+                "X": 312,
+                "Y": 100,
+                "Width": 36,
+                "Height": 36,
+                "LockPosition": true,
+                "Pressed": "__generated\\light_theme_images_widgets_button_icon_rounded_micro_outline_disabled.png",
+                "Released": "__generated\\light_theme_images_widgets_button_icon_rounded_micro_fill_disabled.png",
+                "TextId": "__SingleUse_M22H",
+                "PressedColor": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                },
+                "TextRotation": "0"
+              },
+              {
+                "Type": "ButtonWithLabel",
+                "Name": "fullstop_button",
+                "X": 357,
+                "Y": 100,
+                "Width": 36,
+                "Height": 36,
+                "LockPosition": true,
+                "Pressed": "__generated\\light_theme_images_widgets_button_icon_rounded_micro_outline_disabled.png",
+                "Released": "__generated\\light_theme_images_widgets_button_icon_rounded_micro_fill_disabled.png",
+                "TextId": "__SingleUse_JH22",
+                "PressedColor": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                },
+                "TextRotation": "0"
+              },
+              {
+                "Type": "ButtonWithLabel",
+                "Name": "semicolon_button",
+                "X": 267,
+                "Y": 100,
+                "Width": 36,
+                "Height": 36,
+                "LockPosition": true,
+                "Pressed": "__generated\\light_theme_images_widgets_button_icon_rounded_micro_outline_disabled.png",
+                "Released": "__generated\\light_theme_images_widgets_button_icon_rounded_micro_fill_disabled.png",
+                "TextId": "__SingleUse_MQ5E",
+                "PressedColor": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                },
+                "TextRotation": "0"
+              },
+              {
+                "Type": "ButtonWithLabel",
+                "Name": "hashtag_button",
+                "X": 91,
+                "Y": 100,
+                "Width": 36,
+                "Height": 36,
+                "LockPosition": true,
+                "Pressed": "__generated\\light_theme_images_widgets_button_icon_rounded_micro_outline_disabled.png",
+                "Released": "__generated\\light_theme_images_widgets_button_icon_rounded_micro_fill_disabled.png",
+                "TextId": "__SingleUse_3BWI",
+                "PressedColor": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                },
+                "TextRotation": "0"
+              },
+              {
+                "Type": "ButtonWithLabel",
+                "Name": "colon_button",
+                "X": 223,
+                "Y": 100,
+                "Width": 36,
+                "Height": 36,
+                "LockPosition": true,
+                "Pressed": "__generated\\light_theme_images_widgets_button_icon_rounded_micro_outline_disabled.png",
+                "Released": "__generated\\light_theme_images_widgets_button_icon_rounded_micro_fill_disabled.png",
+                "TextId": "__SingleUse_FUN0",
+                "PressedColor": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                },
+                "TextRotation": "0"
+              },
+              {
+                "Type": "ButtonWithLabel",
+                "Name": "undersuad_button_1",
+                "X": 178,
+                "Y": 100,
+                "Width": 36,
+                "Height": 36,
+                "LockPosition": true,
+                "Pressed": "__generated\\light_theme_images_widgets_button_icon_rounded_micro_outline_disabled.png",
+                "Released": "__generated\\light_theme_images_widgets_button_icon_rounded_micro_fill_disabled.png",
+                "TextId": "__SingleUse_HJHT",
+                "PressedColor": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                },
+                "TextRotation": "0"
+              },
+              {
+                "Type": "ButtonWithLabel",
+                "Name": "and_button_1",
+                "X": 134,
+                "Y": 100,
+                "Width": 36,
+                "Height": 36,
+                "LockPosition": true,
+                "Pressed": "__generated\\light_theme_images_widgets_button_icon_rounded_micro_outline_disabled.png",
+                "Released": "__generated\\light_theme_images_widgets_button_icon_rounded_micro_fill_disabled.png",
+                "TextId": "__SingleUse_K4CB",
+                "PressedColor": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                },
+                "TextRotation": "0"
+              },
+              {
+                "Type": "ButtonWithLabel",
+                "Name": "div_button_1",
+                "X": 91,
+                "Y": 52,
+                "Width": 36,
+                "Height": 36,
+                "LockPosition": true,
+                "Pressed": "__generated\\light_theme_images_widgets_button_icon_rounded_micro_outline_disabled.png",
+                "Released": "__generated\\light_theme_images_widgets_button_icon_rounded_micro_fill_disabled.png",
+                "TextId": "__SingleUse_OWOD",
+                "PressedColor": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                },
+                "TextRotation": "0"
+              }
+            ]
+          },
+          {
+            "Type": "ButtonWithIcon",
+            "Name": "enter_button",
+            "X": 400,
+            "Y": 100,
+            "Width": 36,
+            "Height": 36,
+            "LockPosition": true,
+            "Pressed": "__generated\\light_theme_images_widgets_button_icon_rounded_micro_outline_disabled.png",
+            "Released": "__generated\\light_theme_images_widgets_button_icon_rounded_micro_fill_disabled.png",
+            "IconPressed": "__generated\\icon_theme_images_hardware_keyboard_return_25_25_E8F6FB.svg.png",
+            "IconReleased": "__generated\\icon_theme_images_hardware_keyboard_return_25_25_000000.svg.png",
+            "IconX": 7,
+            "IconY": 8,
+            "IconHeight": 25,
+            "IconWidth": 25
+          },
+          {
+            "Type": "ButtonWithIcon",
+            "Name": "back_button",
+            "X": 400,
+            "Y": 53,
+            "Width": 36,
+            "Height": 36,
+            "LockPosition": true,
+            "Pressed": "__generated\\light_theme_images_widgets_button_icon_rounded_micro_outline_disabled.png",
+            "Released": "__generated\\light_theme_images_widgets_button_icon_rounded_micro_fill_disabled.png",
+            "IconPressed": "__generated\\icon_theme_images_navigation_arrow_back_ios_20_20_E8F6FB.svg.png",
+            "IconReleased": "__generated\\icon_theme_images_navigation_arrow_back_ios_20_20_000000.svg.png",
+            "IconX": 7,
+            "IconY": 8,
+            "IconHeight": 20,
+            "IconWidth": 20
+          },
+          {
+            "Type": "Container",
+            "Name": "abc_button_container",
+            "X": 6,
+            "Y": 100,
+            "Width": 38,
+            "Height": 36,
+            "Visible": false,
+            "LockPosition": true,
+            "Components": [
+              {
+                "Type": "ButtonWithLabel",
+                "Name": "abc_key_button",
+                "Width": 36,
+                "Height": 36,
+                "LockPosition": true,
+                "Pressed": "__generated\\light_theme_images_widgets_button_icon_rounded_micro_outline_disabled.png",
+                "Released": "__generated\\light_theme_images_widgets_button_icon_rounded_micro_fill_disabled.png",
+                "TextId": "__SingleUse_2B3R",
+                "PressedColor": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                },
+                "TextRotation": "0"
+              }
+            ]
+          },
+          {
+            "Type": "Container",
+            "Name": "up_button_container",
+            "X": 6,
+            "Y": 52,
+            "Width": 36,
+            "Height": 36,
+            "LockPosition": true,
+            "Components": [
+              {
+                "Type": "ButtonWithIcon",
+                "Name": "upper_case_button_1",
+                "Y": -1,
+                "Width": 36,
+                "Height": 36,
+                "Pressed": "__generated\\light_theme_images_widgets_button_icon_rounded_micro_outline_disabled.png",
+                "Released": "__generated\\light_theme_images_widgets_button_icon_rounded_micro_fill_disabled.png",
+                "IconPressed": "__generated\\icon_theme_images_file_file_upload_30_30_E8F6FB.svg.png",
+                "IconReleased": "__generated\\icon_theme_images_file_upload_30_30_000000.svg.png",
+                "IconX": 4,
+                "IconY": 5,
+                "IconHeight": 30,
+                "IconWidth": 30
+              },
+              {
+                "Type": "ButtonWithIcon",
+                "Name": "upper_case_button_2",
+                "Y": -1,
+                "Width": 36,
+                "Height": 36,
+                "Pressed": "__generated\\light_theme_images_widgets_button_icon_rounded_micro_outline_disabled.png",
+                "Released": "__generated\\light_theme_images_widgets_button_icon_rounded_micro_fill_disabled.png",
+                "IconPressed": "__generated\\icon_theme_images_file_upload_30_30_E8F6FB.svg.png",
+                "IconReleased": "__generated\\icon_theme_images_file_file_upload_30_30_000000.svg.png",
+                "IconX": 4,
+                "IconY": 5,
+                "IconHeight": 30,
+                "IconWidth": 30
+              }
+            ]
+          },
+          {
+            "Type": "Container",
+            "Name": "num_key_button_container",
+            "X": 6,
+            "Y": 100,
+            "Width": 36,
+            "Height": 36,
+            "LockPosition": true,
+            "Components": [
+              {
+                "Type": "ButtonWithLabel",
+                "Name": "num_key_button",
+                "Width": 36,
+                "Height": 36,
+                "Pressed": "__generated\\light_theme_images_widgets_button_icon_rounded_micro_outline_disabled.png",
+                "Released": "__generated\\light_theme_images_widgets_button_icon_rounded_micro_fill_disabled.png",
+                "TextId": "__SingleUse_DIH6",
+                "PressedColor": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                },
+                "TextRotation": "0"
+              }
+            ]
+          },
+          {
+            "Type": "Container",
+            "Name": "speace_button_container",
+            "X": 114,
+            "Y": 141,
+            "Width": 214,
+            "Height": 36,
+            "LockPosition": true,
+            "Components": [
+              {
+                "Type": "ButtonWithIcon",
+                "Name": "speace_button",
+                "Width": 214,
+                "Height": 36,
+                "LockPosition": true,
+                "Pressed": "__generated\\light_theme_images_widgets_button_regular_height_36_medium_rounded_inactive.png",
+                "Released": "__generated\\light_theme_images_widgets_button_regular_height_36_medium_rounded_disabled.png",
+                "IconPressed": "__generated\\icon_theme_images_editor_space_bar_50_50_E8F6FB.svg.png",
+                "IconReleased": "__generated\\icon_theme_images_editor_space_bar_50_50_000000.svg.png",
+                "IconX": 84,
+                "IconY": -1,
+                "IconHeight": 50,
+                "IconWidth": 50
+              }
+            ]
+          },
+          {
+            "Type": "Container",
+            "Name": "clear_all_button_container",
+            "X": 6,
+            "Y": 141,
+            "Width": 103,
+            "Height": 36,
+            "LockPosition": true,
+            "Components": [
+              {
+                "Type": "ButtonWithLabel",
+                "Name": "clear_button",
+                "Width": 100,
+                "Height": 36,
+                "LockPosition": true,
+                "Pressed": "__generated\\light_theme_images_widgets_button_regular_height_36_tiny_rounded_inactive.png",
+                "Released": "__generated\\light_theme_images_widgets_button_regular_height_36_tiny_rounded_disabled.png",
+                "TextId": "__SingleUse_SVEG",
+                "PressedColor": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                },
+                "TextRotation": "0"
+              }
+            ]
+          }
+        ],
+        "Interactions": [
+          {
+            "InteractionName": "enter_button",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "enter_button"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "enter_button_click"
+            }
+          },
+          {
+            "InteractionName": "up_button_click",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "upper_case_button_1"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "up_case_button_click"
+            }
+          },
+          {
+            "InteractionName": "upper_button_2_click",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "upper_case_button_2"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "upper_case_button_2_click"
+            }
+          },
+          {
+            "InteractionName": "num_kry_button_click",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "num_key_button"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "num_key_button_click"
+            }
+          },
+          {
+            "InteractionName": "abc_button_click",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "abc_key_button"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "abc_button_clcik"
+            }
+          },
+          {
+            "InteractionName": "back_button_click",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "back_button"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "back_button_click"
+            }
+          },
+          {
+            "InteractionName": "q_button_click",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "q_button"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "q_button_click"
+            }
+          },
+          {
+            "InteractionName": "w_button_click",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "w_button"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "w_button_click"
+            }
+          },
+          {
+            "InteractionName": "e_button_click",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "e_button"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "e_button_click"
+            }
+          },
+          {
+            "InteractionName": "r_button_click",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "r_button"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "r_button_click"
+            }
+          },
+          {
+            "InteractionName": "t_button_click",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "t_button"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "t_button_click"
+            }
+          },
+          {
+            "InteractionName": "y_button_click",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "y_button"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "y_button_click"
+            }
+          },
+          {
+            "InteractionName": "u_button_click",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "u_button"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "u_button_click"
+            }
+          },
+          {
+            "InteractionName": "i_button_click",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "i_button"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "i_button_click"
+            }
+          },
+          {
+            "InteractionName": "o_button_click",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "o_button"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "o_button_click"
+            }
+          },
+          {
+            "InteractionName": "p_button_click",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "p_button"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "p_button_click"
+            }
+          },
+          {
+            "InteractionName": "a_button_click",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "a_button"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "a_button_click"
+            }
+          },
+          {
+            "InteractionName": "s_button_click",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "s_button"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "s_button_click"
+            }
+          },
+          {
+            "InteractionName": "f_button_click",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "f_button"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "f_button_click"
+            }
+          },
+          {
+            "InteractionName": "g_button_click",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "g_button"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "g_button_click"
+            }
+          },
+          {
+            "InteractionName": "h_button_click",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "h_button"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "h_button_click"
+            }
+          },
+          {
+            "InteractionName": "j_button_click",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "j_button"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "j_button_click"
+            }
+          },
+          {
+            "InteractionName": "k_button_click",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "k_button"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "k_button_click"
+            }
+          },
+          {
+            "InteractionName": "l_button_click",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "l_button"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "l_button_click"
+            }
+          },
+          {
+            "InteractionName": "z_button_click",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "z_button"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "z_button_click"
+            }
+          },
+          {
+            "InteractionName": "x_button_click",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "x_button"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "x_button_click"
+            }
+          },
+          {
+            "InteractionName": "c_button_click",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "c_button"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "c_button_click"
+            }
+          },
+          {
+            "InteractionName": "v_button_click",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "v_button"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "v_button_click"
+            }
+          },
+          {
+            "InteractionName": "b_button_click",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "b_button"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "b_button_click"
+            }
+          },
+          {
+            "InteractionName": "n_button_click",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "n_button"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "n_button_click"
+            }
+          },
+          {
+            "InteractionName": "m_button_click",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "m_button"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "m_button_click"
+            }
+          },
+          {
+            "InteractionName": "d_button_click",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "d_button"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "d_button_click"
+            }
+          },
+          {
+            "InteractionName": "speace_button_click",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "speace_button"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "speace_button_click"
+            }
+          },
+          {
+            "InteractionName": "clear_button_click",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "clear_button"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "clear_button_click"
+            }
+          },
+          {
+            "InteractionName": "Z_button_click",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "Z_button"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "Z_button_click"
+            }
+          },
+          {
+            "InteractionName": "Q_button_click",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "Q_button"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "Q_button_click"
+            }
+          },
+          {
+            "InteractionName": "Y_button_click",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "Y_button"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "Y_button_click"
+            }
+          },
+          {
+            "InteractionName": "U_button_click",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "U_button"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "U_button_click"
+            }
+          },
+          {
+            "InteractionName": "W_button_click",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "W_button"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "W_button_click"
+            }
+          },
+          {
+            "InteractionName": "R_button_click",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "R_button"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "R_button_click"
+            }
+          },
+          {
+            "InteractionName": "T_button_press",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "T_button"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "T_button_click"
+            }
+          },
+          {
+            "InteractionName": "E_button_click",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "E_button"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "E_button_click"
+            }
+          },
+          {
+            "InteractionName": "O_button_click",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "O_button"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "O_button_click"
+            }
+          },
+          {
+            "InteractionName": "P_button_press",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "P_button"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "P_button_click"
+            }
+          },
+          {
+            "InteractionName": "I_button_click",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "I_button"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "I_button_click"
+            }
+          },
+          {
+            "InteractionName": "J_button_click",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "J_button"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "J_button_click"
+            }
+          },
+          {
+            "InteractionName": "D_button_click",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "D_button"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "D_button_click"
+            }
+          },
+          {
+            "InteractionName": "G_button_click",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "G_button"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "G_button_click"
+            }
+          },
+          {
+            "InteractionName": "H_button_click",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "H_button"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "H_button_click"
+            }
+          },
+          {
+            "InteractionName": "L_button_click",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "L_button"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "L_button_click"
+            }
+          },
+          {
+            "InteractionName": "k_button_press",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "K_button"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "K_button_click"
+            }
+          },
+          {
+            "InteractionName": "M_button_click",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "M_button"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "M_button_click"
+            }
+          },
+          {
+            "InteractionName": "N_button_press",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "N_button"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "N_button_click"
+            }
+          },
+          {
+            "InteractionName": "X_button_click",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "X_button"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "X_button_click"
+            }
+          },
+          {
+            "InteractionName": "B_button_click",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "B_button"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "B_button_click"
+            }
+          },
+          {
+            "InteractionName": "C_button_click",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "C_button"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "C_button_click"
+            }
+          },
+          {
+            "InteractionName": "V_button_click",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "V_button"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "V_button_click"
+            }
+          },
+          {
+            "InteractionName": "A_button_click",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "A_button"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "A_button_click"
+            }
+          },
+          {
+            "InteractionName": "F_button_click",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "F_button"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "F_button_click"
+            }
+          },
+          {
+            "InteractionName": "S_button_click",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "S_button"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "S_button_click"
+            }
+          },
+          {
+            "InteractionName": "one_button_click",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "one_button"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "one_button_click"
+            }
+          },
+          {
+            "InteractionName": "two_button_click",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "two_button"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "two_button_click"
+            }
+          },
+          {
+            "InteractionName": "six_button_click",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "six_button"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "six_button_click"
+            }
+          },
+          {
+            "InteractionName": "seven_button_click",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "seven_button"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "seven_button_click"
+            }
+          },
+          {
+            "InteractionName": "four_button_click",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "four_button"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "four_button_click"
+            }
+          },
+          {
+            "InteractionName": "five_button_click",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "five_button_1"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "five_button_click"
+            }
+          },
+          {
+            "InteractionName": "three_button_click",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "three_button"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "three_button_click"
+            }
+          },
+          {
+            "InteractionName": "nine_button_click",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "nine_button_1"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "nine_button_click"
+            }
+          },
+          {
+            "InteractionName": "zero_button_click",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "zero_button"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "zero_button_click"
+            }
+          },
+          {
+            "InteractionName": "eight_button_click",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "eight_button"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "eight_button_click"
+            }
+          },
+          {
+            "InteractionName": "multiplie_button_click",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "multiplie_button"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "multiplie_button_click"
+            }
+          },
+          {
+            "InteractionName": "equal_button_click",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "equal_button"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "equal_button_click"
+            }
+          },
+          {
+            "InteractionName": "plussign_button_click",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "PlusSign_button"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "plussign_button"
+            }
+          },
+          {
+            "InteractionName": "minussign_button",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "minus_sign_button"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "minussign_button"
+            }
+          },
+          {
+            "InteractionName": "anglebracketsright_button",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "Anglebrackets_right"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "anglebracketsright_button"
+            }
+          },
+          {
+            "InteractionName": "anglebracketsleft_button",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "Anglebrackets_left"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "anglebracketsleft_button"
+            }
+          },
+          {
+            "InteractionName": "atsymbol_button",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "at_symbol_button"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "atsymbol_button"
+            }
+          },
+          {
+            "InteractionName": "squarebracket_right_button",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "Square_brackets_right"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "squarebracket_right_button"
+            }
+          },
+          {
+            "InteractionName": "squarebracket_left_button",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "square_brack_left"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "squarebracket_left_button"
+            }
+          },
+          {
+            "InteractionName": "questionmark_button_click",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "questionmark_button"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "questionmark_button_click"
+            }
+          },
+          {
+            "InteractionName": "fullstop_button_click",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "fullstop_button"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "fullstop_button_click"
+            }
+          },
+          {
+            "InteractionName": "semicolon_button_click",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "semicolon_button"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "semicolon_button_click"
+            }
+          },
+          {
+            "InteractionName": "hashtage_button_click",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "hashtag_button"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "hashtage_button_click"
+            }
+          },
+          {
+            "InteractionName": "colon_button_click",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "colon_button"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "colon_button_click"
+            }
+          },
+          {
+            "InteractionName": "undersuad_button",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "undersuad_button_1"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "undersuad_button"
+            }
+          },
+          {
+            "InteractionName": "and_button",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "and_button_1"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "and_button"
+            }
+          },
+          {
+            "InteractionName": "div_button_click",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "div_button_1"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "div_button_click"
+            }
+          }
+        ]
+      }
+    ],
+    "Name": "Smart_Industrial_HMI",
+    "Resolution": {
+      "Width": 480,
+      "Height": 272
+    },
+    "SelectedColorDepth": 24,
+    "StartupScreenName": "Screen1",
+    "SelectedStartupLanguage": "GB",
+    "TouchGfxPath": "touchgfx",
+    "UIPath": ".",
+    "ApplicationTemplateName": "Simulator",
+    "ApplicationTemplateVersion": "2.0.0",
+    "ApplicationTemplateDescription": "Simulator Application Template",
+    "AvailableColorDepths": [
+      1,
+      2,
+      4,
+      8,
+      16,
+      24
+    ],
+    "AvailableLCDs": {
+      "1": "LCD1bpp",
+      "2": "LCD2bpp",
+      "4": "LCD4bpp",
+      "8": "LCD8bpp_ARGB2222",
+      "16": "LCD16bpp",
+      "24": "LCD24bpp"
+    },
+    "AvailableSections": [
+      "ExtFlashSection",
+      "IntFlashSection"
+    ],
+    "AvailableResolutions": [],
+    "PhysicalButtons": [],
+    "FrameworkFeatures": {
+      "LCD24bpp": {
+        "Id": "LCD24bpp",
+        "IsEnabled": true
+      }
+    },
+    "GenerateAssetsCommand": "make -f simulator/gcc/Makefile assets -j8",
+    "PostGenerateCommand": "touchgfx update_project --project-file=simulator/msvs/Application.vcxproj",
+    "CompileSimulatorCommand": "make -f simulator/gcc/Makefile -j8",
+    "RunSimulatorCommand": "build\\bin\\simulator.exe",
+    "CompileTargetCommand": "",
+    "FlashTargetCommand": "",
+    "LandscapeSkinX": 0,
+    "LandscapeSkinY": 0,
+    "PortraitSkinX": 0,
+    "PortraitSkinY": 0,
+    "DisplayOrientation": "Landscape",
+    "AdditionalFeatures": [
+      "VectorFonts"
+    ]
+  },
+  "Version": "4.26.0",
+  "CreatedBy": "4.26.0"
+}
