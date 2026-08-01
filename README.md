@@ -118,9 +118,7 @@ The custom container helps:
 
 ### Custom Container
 
-<img width="562" height="232" alt="image" src="https://github.com/user-attachments/assets/dd5aa649-8450-4a5f-814d-5b4f3c86761a" /> <img width="552" height="222" alt="image" src="https://github.com/user-attachments/assets/4075cee8-c99e-4156-b7c5-eba965631e4c" />
-<img width="552" height="222" alt="image" src="https://github.com/user-attachments/assets/e93e324e-f72d-49b0-9e4b-16a33cbdcaf8" />
-<img width="557" height="225" alt="image" src="https://github.com/user-attachments/assets/4623aa4a-e911-4bc4-8a67-1af12385f431" />
+<img width="562" height="232" alt="image" src="https://github.com/user-attachments/assets/dd5aa649-8450-4a5f-814d-5b4f3c86761a" /> 
 
 
 ---
